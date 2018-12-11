@@ -11,12 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     var circleView:PieCircleView?
+    var circleView2:PielineCircleView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          circleView = PieCircleView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 500), radius: 100, distance: 10, datas: [10,20,30,60,100], colors: [UIColor.red,UIColor.yellow,UIColor.purple,UIColor.blue,UIColor.black])
         circleView!.center = view.center
+        circleView?.center.y = circleView!.center.y - 300
         view.addSubview(circleView!)
         circleView!.startStroke()
+        
+        circleView2 = PielineCircleView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 500), radius: 100, distance: 10, datas: [10,20,30,60,100], colors: [UIColor.red,UIColor.yellow,UIColor.purple,UIColor.blue,UIColor.black])
+        circleView2!.center = view.center
+        circleView2?.center.y = circleView2!.center.y + 200
+        view.addSubview(circleView2!)
+        circleView2!.startStroke()
         
         let btn = UIButton(type: .custom)
         btn.setTitle("click again", for: .normal)
@@ -26,10 +35,12 @@ class ViewController: UIViewController {
         btn.layer.borderColor = UIColor.blue.cgColor
         btn.layer.borderWidth = 1
         view.addSubview(btn)
+        btn.center = view.center
     }
 
     @objc func whenBtnClicked() {
         circleView?.startStroke()
+        circleView2?.startStroke()
     }
 
 }

@@ -13,6 +13,7 @@
 		94A206D521BFB454004493A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A206D421BFB454004493A0 /* Assets.xcassets */; };
 		94A206D821BFB454004493A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A206D621BFB454004493A0 /* LaunchScreen.storyboard */; };
 		94A206E021BFB461004493A0 /* PieCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A206DF21BFB461004493A0 /* PieCircleView.swift */; };
+		94A206E221BFC0A5004493A0 /* PielineCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A206E121BFC0A5004493A0 /* PielineCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		94A206D721BFB454004493A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94A206D921BFB454004493A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A206DF21BFB461004493A0 /* PieCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieCircleView.swift; sourceTree = "<group>"; };
+		94A206E121BFC0A5004493A0 /* PielineCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PielineCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				94A206CD21BFB453004493A0 /* AppDelegate.swift */,
 				94A206CF21BFB453004493A0 /* ViewController.swift */,
 				94A206DF21BFB461004493A0 /* PieCircleView.swift */,
+				94A206E121BFC0A5004493A0 /* PielineCircleView.swift */,
 				94A206D121BFB453004493A0 /* Main.storyboard */,
 				94A206D421BFB454004493A0 /* Assets.xcassets */,
 				94A206D621BFB454004493A0 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A206D021BFB453004493A0 /* ViewController.swift in Sources */,
+				94A206E221BFC0A5004493A0 /* PielineCircleView.swift in Sources */,
 				94A206E021BFB461004493A0 /* PieCircleView.swift in Sources */,
 				94A206CE21BFB453004493A0 /* AppDelegate.swift in Sources */,
 			);
