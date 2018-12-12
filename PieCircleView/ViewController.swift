@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       print(UIApplication.shared.statusBarFrame)
          circleView = PieCircleView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 500), radius: 100, distance: 10, datas: [10,20,30,60,100], colors: [UIColor.red,UIColor.yellow,UIColor.purple,UIColor.blue,UIColor.black])
         circleView!.center = view.center
         circleView?.center.y = circleView!.center.y - 300
